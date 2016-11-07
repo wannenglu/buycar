@@ -1,0 +1,834 @@
+body,
+h1,
+h2,
+h3,
+h4,
+div,
+ul,
+li,
+dl,
+dt,
+dd,
+form,
+input,
+select,
+option,
+textarea,
+a,
+img,
+em,
+i,
+strong,
+b,
+button {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+input,
+select,
+option,
+textarea {
+  font-family: "宋体";
+  outline: none;
+  resize: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
+img {
+  vertical-align: top;
+  border: 0 none;
+}
+html {
+  font-size: 625%;
+}
+input,
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  /* 在ios中去除按钮有渐变 */
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+body {
+  font-family: "黑体";
+  font-size: 0.26rem;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  background: #f7f7f7;
+}
+/* 首页 */
+.header {
+  width: 6.89rem;
+  height: 0.78rem;
+  font-family: "宋体";
+  font-size: 0.26rem;
+  background: #ffffff;
+  border-top: #b2b2b2 1px solid;
+  padding: 0 0.25rem 0 0.36rem;
+}
+.hl,
+.hr {
+  line-height: 0.78rem;
+  text-align: center;
+}
+.hl {
+  float: left;
+}
+.hr {
+  float: right;
+  font-weight: 400;
+  color: #666666;
+}
+.index_mian {
+  padding-top: 0.2rem;
+  padding-bottom: 1.1rem;
+}
+.ad {
+  width: 100%;
+  height: 3rem;
+}
+.ad img {
+  width: 100%;
+  height: 100%;
+}
+.nav {
+  width: 100%;
+  margin-top: 0.1rem;
+  background: url("../images/index_nav.png") no-repeat 0.16rem 0.15rem;
+  background-size: 7.19rem 4.81rem;
+}
+.nav li {
+  float: left;
+  width: 3.5rem;
+  height: 1.5rem;
+  margin: 0.15rem 0.03rem 0 0.16rem;
+  font-size: 0.34rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+}
+.nav a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.index_tel {
+  width: 100%;
+  margin-top: 0.83rem;
+  line-height: 0.26rem;
+  text-align: center;
+}
+.index_tel a,
+.index_tel a:hover,
+.index_tel a:active {
+  color: #666666;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  height: 1rem;
+  background: #fff;
+}
+.footer_nav {
+  width: 100%;
+  border-top: 1px #c7c7cd solid;
+}
+.footer_nav li {
+  width: 0.55rem;
+  height: 0.8rem;
+  margin-top: 0.19rem;
+}
+.footer_nav a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../images/icon.png") no-repeat -0.02rem -0.83rem;
+  background-size: 2.43rem 2.1rem;
+  overflow: hidden;
+  text-indent: -99em;
+}
+.footer_nav li:nth-child(1) {
+  float: left;
+  margin-left: 1.26rem;
+}
+.footer_nav li:nth-child(2) {
+  float: right;
+  margin-right: 1.75rem;
+}
+.footer_nav li:nth-child(2) a {
+  background: url("../images/icon.png") no-repeat -0.57rem 0;
+  background-size: 2.43rem 2.1rem;
+}
+/* 卖车 */
+.filterNav {
+  width: 100%;
+  height: 0.79rem;
+  line-height: 0.79rem;
+  background: #fff;
+  border-top: 1px #c7c7cd solid;
+}
+.filterNav li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  color: #666666;
+}
+.sell_main {
+  width: 100%;
+  margin-top: 1px;
+  padding-top: 0.02rem;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 1rem;
+}
+.sell_main li {
+  float: left;
+  width: 110%;
+  overflow: hidden;
+}
+.sell_mList {
+  display: block;
+  width: 100%;
+  padding: 0.24rem 0 0.24rem 0.16rem;
+  border-bottom: #e5e5e5 1px solid;
+}
+.sell_mImg {
+  float: left;
+  width: 1.98rem;
+  height: 1.48rem;
+  border: #e5e5e5 1px solid;
+}
+.sell_mImg img {
+  width: 100%;
+  height: 100%;
+}
+.sell_mTitle {
+  float: left;
+  width: 4.59rem;
+  margin-left: 0.3rem;
+}
+.sell_mTitle dt {
+  width: 100%;
+  height: 0.86rem;
+  font-size: 0.32rem;
+  color: #000000;
+  font-weight: bold;
+}
+.sell_mTitle dd {
+  width: 100%;
+  height: 0.5rem;
+  margin-top: 0.13rem;
+}
+.sell_mTitle dd .s_mTl,
+.sell_mTitle dd i {
+  color: #d5d713;
+}
+.sell_mTitle dd .s_mTl {
+  float: left;
+  font-size: 0.32rem;
+  line-height: 0.5rem;
+}
+.sell_mTitle dd i {
+  font-style: normal;
+  font-size: 0.2rem;
+}
+.sell_mTitle dd .s_mTr {
+  float: right;
+  font-size: 0.2rem;
+  line-height: 0.32rem;
+  color: #c1c1c1;
+  margin-top: 0.18rem;
+}
+.side {
+  position: fixed;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+.side ul {
+  width: 75%;
+  height: 100%;
+  background: #fff;
+}
+.side ul li {
+  padding-left: 0.5rem;
+  line-height: 0.7rem;
+  border-bottom: #999999 1px solid;
+  font-size: 0.32rem;
+  background: #fff;
+}
+.side ul ul {
+  width: 100%;
+  height: auto;
+  padding-bottom: 0.2rem;
+}
+.side ul ul ul li {
+  border-bottom: #999 1px dashed;
+}
+.side ul a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+.side_btn {
+  position: fixed;
+  z-index: 9;
+  left: -100%;
+  bottom: 0;
+  width: 75%;
+  background: #fff;
+}
+.side_content strong,
+.side_content span {
+  float: left;
+  margin-right: 0.15rem;
+}
+.side_content {
+  line-height: 0.5rem;
+  font-size: 0.3rem;
+  padding: 0.3rem;
+  overflow: hidden;
+}
+.side_content span {
+  border: #000 1px solid;
+  padding: 0 0.05rem;
+}
+.side_button {
+  width: 100%;
+  height: 0.8rem;
+  padding-top: 0.2rem;
+}
+.side_submit,
+.side_cancel {
+  float: right;
+  width: 1.1rem;
+  height: 0.6rem;
+  text-align: center;
+  line-height: 0.6rem;
+  border: 0 none;
+  margin-right: 0.15rem;
+  color: #fff;
+  font-size: 0.3rem;
+}
+.side_submit {
+  background: #d31131;
+}
+.side_cancel {
+  background: #999;
+}
+@keyframes sideIn {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-moz-keyframes sideIn {
+  /* Firefox */
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes sideIn {
+  /* Safari 和 Chrome */
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-o-keyframes sideIn {
+  /* Opera */
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+.sideCur {
+  animation: sideIn 0.5s forwards;
+  -moz-animation: sideIn 0.5s forwards;
+  /* Firefox */
+  -webkit-animation: sideIn 0.5s forwards;
+  /* Safari 和 Chrome */
+  -o-animation: sideIn 0.5s forwards;
+  /* Opera */
+}
+@keyframes sideOut {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@-moz-keyframes sideOut {
+  /* Firefox */
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@-webkit-keyframes sideOut {
+  /* Safari 和 Chrome */
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@-o-keyframes sideOut {
+  /* Opera */
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+.sideIn {
+  animation: sideIn 0.5s forwards;
+  -moz-animation: sideIn 0.5s forwards;
+  /* Firefox */
+  -webkit-animation: sideIn 0.5s forwards;
+  /* Safari 和 Chrome */
+  -o-animation: sideIn 0.5s forwards;
+  /* Opera */
+}
+.sideOut {
+  animation: sideOut 0.5s forwards;
+  -moz-animation: sideOut 0.5s forwards;
+  /* Firefox */
+  -webkit-animation: sideOut 0.5s forwards;
+  /* Safari 和 Chrome */
+  -o-animation: sideOut 0.5s forwards;
+  /* Opera */
+}
+.sell_foot li:nth-child(1) a {
+  background: url("../images/icon.png") no-repeat -0.02rem 0;
+  background-size: 2.43rem 2.1rem;
+}
+/* 卖车详情 */
+.body01 {
+  background: #f1f1f1;
+}
+.carImg {
+  width: 100%;
+  height: 3rem;
+}
+.carImg img {
+  width: 100%;
+  height: 100%;
+}
+.carInfo,
+.carConfig,
+.carComp {
+  margin-top: 0.15rem;
+  background: #fff;
+  border-bottom: #c8c7cc 1px solid;
+}
+.carInfo {
+  padding: 0.19rem 0 0 0.46rem;
+}
+.carInfo dl {
+  width: 100%;
+  overflow: hidden;
+}
+.carInfo dt {
+  float: left;
+  width: 100%;
+  font-size: 0.32rem;
+  font-weight: bold;
+  line-height: 0.68rem;
+}
+.carInfo dd {
+  float: left;
+  width: 2.28rem;
+  font-family: "宋体";
+  color: #999999;
+  line-height: 0.5rem;
+}
+.carInfo .carInfo_dd {
+  width: 4.5rem;
+}
+.carInfo strong {
+  display: block;
+  font-family: "宋体";
+  font-size: 0.34rem;
+  color: #d5d713;
+  font-weight: bold;
+  line-height: 1.12rem;
+}
+.carConfig {
+  padding: 0.3rem 0 0.23rem 0.31rem;
+  color: #c7c7cd;
+  overflow: hidden;
+}
+.carConfig dt {
+  float: left;
+  width: 85 / ft;
+}
+.carConfig dd {
+  float: left;
+  width: 6.1rem;
+}
+.carComp {
+  padding: 0.15rem 0 0.28rem 0.36rem;
+  margin-bottom: 1rem;
+}
+.carComp dt {
+  width: 100%;
+  font-size: 0.32rem;
+  font-weight: bold;
+  line-height: 0.6rem;
+}
+.carComp dd {
+  width: 100%;
+  color: #c1c1c1;
+  line-height: 0.46rem;
+}
+.footerTel {
+  border-top: #c8c7cc 1px solid;
+  width: 100%;
+}
+.footerTel a {
+  display: block;
+  width: 1.93rem;
+  height: 0.46rem;
+  margin: 0.3rem auto 0;
+  font-size: 0.34rem;
+  color: #999999;
+  background: url("../images/icon.png") no-repeat -1.36rem -1.23rem;
+  background-size: 2.43rem 2.1rem;
+  padding-left: 0.58rem;
+}
+/* 卖车管理 */
+.publish {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.19rem;
+  border-top: #c7c7cd 1px solid;
+  background: #fff;
+}
+#publish {
+  position: absolute;
+  top: 0.23rem;
+  left: 1.82rem;
+  width: 3.81rem;
+  height: 0.65rem;
+  background: #fff;
+  color: #dadc3c;
+  line-height: 0.65rem;
+  border: #ecee11 1px solid;
+  border-radius: 0.02rem;
+  text-align: center;
+}
+.sell_mg {
+  margin-top: 0.23rem;
+}
+.sell_mg li {
+  margin-top: 0.27rem;
+}
+.sell_mg .sell_mgList {
+  width: 6.75rem;
+  padding: 0 0 0.24rem 0.16rem;
+}
+.sell_mg .sell_mTitle {
+  width: 3.8rem;
+  margin-left: 0.25rem;
+}
+.mg_check {
+  float: left;
+  width: 0.44rem;
+  height: 0.44rem;
+  margin: 0.43rem 0.08rem 0 0.23rem;
+  background: url("../images/icon.png") no-repeat -1.34rem -0.61rem;
+  background-size: 2.43rem 2.1rem;
+  overflow: hidden;
+}
+.mg_check .mg_c {
+  opacity: 0;
+  margin-left: -100rem;
+}
+.mg_checkCur {
+  background: url("../images/icon.png") no-repeat -1.34rem -0.05rem;
+  background-size: 2.43rem 2.1rem;
+}
+.sell_mgList {
+  float: left;
+}
+.mg_btn {
+  display: block;
+  width: 100%;
+  height: 0.99rem;
+  border: 0 none;
+  border-top: #c7c7cd 1px solid;
+  background: #d31131;
+  color: #fff;
+  font-size: 0.34rem;
+  font-weight: bold;
+  line-height: 0.99rem;
+  text-align: center;
+}
+/* 卖车发布 */
+.top {
+  width: 100%;
+  border-top: #b2b2b2 1px solid;
+}
+.publish_box {
+  padding-left: 0.3rem;
+  margin-top: 0.5rem;
+  border-top: #c8c7cc 1px solid;
+  border-bottom: #c8c7cc 1px solid;
+  background: #fff;
+}
+.publish_ul li {
+  border-bottom: #c8c7cc 1px solid;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  font-size: 0.26rem;
+}
+.publish_ul label {
+  float: left;
+}
+.publish_ul input {
+  float: right;
+  width: 5.2rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  border: 0 none;
+  background: none;
+}
+.publish_ul li:last-child {
+  border-bottom: 0 none;
+}
+.publish_ul .arrow {
+  box-sizing: border-box;
+  padding-right: 0.72rem;
+  text-align: right;
+  background: url("../images/arrow.png") no-repeat right top;
+  background-size: auto 100%;
+}
+.publish_ul .arrow_w {
+  background-image: url(../images/wan.png);
+}
+.buySell_text {
+  display: block;
+  width: 100%;
+  height: 3.67rem;
+  box-sizing: border-box;
+  font-size: 0.26rem;
+  line-height: 0.36rem;
+  padding: 0.35rem 0.2rem 0.2rem;
+  border: 0 none;
+  border-bottom: #c8c7cc 1px solid;
+  overflow-y: auto;
+}
+.publish_text {
+  height: 1.7rem;
+}
+.publish_file {
+  position: relative;
+}
+.publish_file input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  opacity: 0;
+}
+.publish_img {
+  position: absolute;
+  top: 0.13rem;
+  left: 0.13rem;
+  z-index: 1;
+  width: 0.58rem;
+  height: 0.58rem;
+  background: #373737;
+  border-radius: 0.12rem;
+}
+.publish_img i {
+  position: absolute;
+  right: 0.12rem;
+  top: 0.14rem;
+  width: 0.15rem;
+  height: 0.15rem;
+  background: #f1f330;
+  border-radius: 50%;
+}
+.publish_img em {
+  position: absolute;
+  left: 0.9rem;
+  top: 0;
+  font-style: normal;
+  font-size: 0.26rem;
+  line-height: 0.58rem;
+  white-space: nowrap;
+}
+.publish_arrow {
+  float: right;
+  height: 100%;
+}
+.buySell_btn {
+  display: block;
+  margin: 1rem auto 0.5rem;
+  border: 0 none;
+  width: 6.78rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #333;
+  font-size: 0.34rem;
+  background: #f1f330;
+  border-radius: 0.08rem;
+}
+.buy_mTitle dt {
+  height: 0.43rem;
+}
+.buy_mTitle dt,
+.buy_mTitle .deploy {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.buy_mTitle .deploy {
+  font-size: 0.2rem;
+  color: #b8b8b8;
+}
+/* 买车详情 */
+.buy_person {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0.32rem 0 0.33rem 0.47rem;
+  border-top: #a8a8a8 1px solid;
+}
+.buy_person dt {
+  float: left;
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-right: 0.17rem;
+}
+.buy_person dt img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.buy_person dd {
+  float: left;
+  width: 6rem;
+  font-family: "宋体";
+  font-size: 0.34rem;
+  line-height: 0.48rem;
+  font-weight: bold;
+}
+.buy_person dd:last-child {
+  font-size: 0.26rem;
+  color: #e5e5e5;
+  font-weight: 400;
+}
+/* 委托买卖 */
+.buySell {
+  margin-top: 0.19rem;
+  margin-bottom: 1.5rem;
+}
+.buySell li {
+  width: 100%;
+  border-bottom: #e5e5e5 1px solid;
+  padding-top: 0.43rem;
+  overflow: hidden;
+  background: #fff;
+}
+.buySell li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.buySell_num {
+  float: left;
+  width: 1.11rem;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  text-align: center;
+  border-right: #c7c7cd 1px solid;
+  color: #999;
+  font-size: 0.34rem;
+}
+.buySell_car {
+  float: left;
+  width: 5.3rem;
+  margin-left: 0.62rem;
+  padding-bottom: 0.2rem;
+}
+.buySell_car dt {
+  height: 0.44rem;
+  line-height: 0.44rem;
+  font-size: 0.32rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+.buySell_car dd {
+  height: 0.46rem;
+  line-height: 0.46rem;
+  font-size: 0.2rem;
+  color: #b8b8b8;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.buySell_car dd:last-child {
+  text-align: right;
+}
+/* 委托发布 */
+.buySell_text {
+  display: block;
+  width: 100%;
+  height: 3.67rem;
+  line-height: 0.36rem;
+  box-sizing: border-box;
+  font-size: 0.26rem;
+  padding: 0.35rem 0.2rem 0.2rem;
+  border: 0 none;
+  border-bottom: #c8c7cc 1px solid;
+  overflow-y: auto;
+}

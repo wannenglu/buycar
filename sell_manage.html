@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<title>卖车管理</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.1.10.0.min.js"></script>
+		<script src="js/fontAuto.js"></script>
+	</head>
+	<body>
+		<form>
+			<div class="publish">
+				<a id="publish" href="sell_publish.html">发布一条</a>
+			</div>
+			<ul class="sell_main sell_mg">
+				<li>
+					<span class="mg_check">
+						<input class="mg_c" type="checkbox">
+					</span>
+					<div class="sell_mList sell_mgList">
+						<div class="sell_mImg">
+							<img src="images/sell_01.jpg" />
+						</div>
+						<dl class="sell_mTitle">
+							<dt>15款奔驰ML350中东四驱3.0T</dt>
+							<dd>
+								<span class="s_mTl">
+									75.5
+									<i>万元</i>
+								</span>
+								<span class="s_mTr">浏览 134</span>
+							</dd>
+						</dl>
+					</div>
+				</li>
+				<li>
+					<span class="mg_check">
+						<input class="mg_c" type="checkbox">
+					</span>
+					<div class="sell_mList sell_mgList">
+						<div class="sell_mImg">
+							<img src="images/sell_01.jpg" />
+						</div>
+						<dl class="sell_mTitle">
+							<dt>15款奔驰ML350中东四驱3.0T</dt>
+							<dd>
+								<span class="s_mTl">
+									75.5
+									<i>万元</i>
+								</span>
+								<span class="s_mTr">浏览 134</span>
+							</dd>
+						</dl>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="footer">
+				<button class="mg_btn" type="submit">删除（<span>0</span>）</button>
+			</div>
+		</form>
+		
+		<script>
+			var lis = document.querySelectorAll(".sell_mg li");
+			for(var i=0;i<lis.length;i++){
+				lis[i].onclick = function(){
+					var input = this.getElementsByTagName("input")[0];
+					if(input.checked){
+						input.checked = false;
+						input.parentNode.className = "mg_check";
+					}
+					else{
+						input.checked = true;
+						input.parentNode.className += " mg_checkCur";
+					}
+					
+					var inputs = document.querySelectorAll(".mg_c");
+					var n = 0;
+					for(var j=0;j<inputs.length;j++){
+						if(inputs[j].checked){
+							n++;
+						}
+					}
+					document.querySelector(".mg_btn span").innerHTML = n;
+				}
+			}
+			
+			document.querySelector("form").onsubmit = function(){
+				if(window.confirm("确定删除吗？")){
+					var nowChecked = document.querySelectorAll(".mg_checkCur");
+					for(var i=0;i<nowChecked.length;i++){
+						nowChecked[i].parentNode.remove();
+					}
+					return true;
+				}
+				else{
+					return false;
+				}
+			}
+			
+			
+			
+		</script>
+		
+	</body>
+</html>

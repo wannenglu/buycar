@@ -1,0 +1,734 @@
+body,h1,h2,h3,h4,div,ul,li,dl,dt,dd,form,input,select,option,textarea,a,img,em,i,strong,b,button{ margin: 0; padding: 0;}
+li{ list-style: none;}
+input,select,option,textarea{font-family:"宋体";outline: none; resize: none;}
+a{ text-decoration: none; color: #000;}
+a:hover{ color: #000;}
+a:visited{ color: #000;}
+img{ vertical-align: top; border: 0 none;}
+html{ font-size: 625%;}
+input,button{
+    cursor: pointer;
+    -webkit-appearance: none;/* 在ios中去除按钮有渐变 */
+}
+.clearfix{ *zoom:1;}
+.clearfix:after{ content: "."; height: 0; clear: both; visibility: hidden; display: block;}
+
+@ft:100rem;
+@imgSrc:"../images";
+.bg(@url,@repeat,@x,@y,@W,@Y){
+    background: url("@{imgSrc}/@{url}") @repeat @x @y;
+    background-size:@W @Y;
+}
+.wh(@w,@h){
+    width: @w/@ft;
+    height: @h/@ft;
+}
+body{
+    font-family: "黑体";
+    font-size: 26/@ft;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    background: #f7f7f7;
+}
+
+/* 首页 */
+.header{
+    .wh(689,78);
+    font-family:"宋体";
+    font-size: 26/@ft;
+    background: #ffffff;
+    border-top: #b2b2b2 1px solid;
+    padding: 0 25/@ft 0 36/@ft;
+}
+.hl,.hr{
+    line-height: 78/@ft;
+    text-align: center;
+}
+.hl{
+    float: left;
+}
+.hr{
+    float: right;
+    font-weight: 400;
+    color: #666666;
+}
+.index_mian{
+    padding-top: 20/@ft;
+    padding-bottom: 110/@ft;
+}
+.ad{
+    .wh(10000%,300);
+    
+    img{
+        .wh(10000%,10000%);
+    }
+}
+.nav{
+    width: 100%;
+    margin-top: 10/@ft;
+    .bg("index_nav.png",no-repeat,16/@ft,15/@ft,719/@ft,481/@ft);
+    li{
+        float: left;
+        .wh(350,150);
+        margin: 15/@ft 3/@ft 0 16/@ft;
+        font-size: 34/@ft;
+        line-height: 150/@ft;
+        text-align: center;
+        color: #333333;
+        font-weight: bold;
+    }
+    a{
+        display: block;
+        .wh(10000%,10000%);
+    }
+}
+.index_tel{
+    width: 100%;
+    margin-top: 83/@ft;
+    line-height: 26/@ft;
+    text-align: center;
+    
+    a,a:hover,a:active{
+        color: #666666;
+    }
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    .wh(10000%,100);
+    background: #fff;
+}
+.footer_nav{
+    width: 100%;
+    border-top: 1px #c7c7cd solid;
+    li{
+        .wh(55,80);
+        margin-top: 19/@ft;
+    }
+    a{
+        display: block;
+        .wh(10000%,10000%);
+        .bg("icon.png",no-repeat,-2/@ft,-83/@ft,243/@ft,210/@ft);
+        overflow: hidden;
+        text-indent: -99em;
+    }
+    li:nth-child(1){
+        float: left;
+        margin-left: 126/@ft;
+    }
+    li:nth-child(2){
+        float: right;
+        margin-right: 175/@ft;
+        a{
+            .bg("icon.png",no-repeat,-57/@ft,0,243/@ft,210/@ft);
+        }
+    }
+    
+}
+
+/* 卖车 */
+.filterNav{
+    .wh(10000%,79);
+    line-height: 79/@ft;
+    background: #fff;
+    border-top: 1px #c7c7cd solid;
+    li{
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        color: #666666;
+    }
+}
+.sell_main{
+    width: 100%;
+    margin-top: 1px;
+    padding-top: 2/@ft;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 100/@ft;
+    li{
+        float: left;
+        width: 110%;
+        overflow: hidden;
+    }
+}
+.sell_mList{
+    display: block;
+    width: 100%;
+    padding: 24/@ft 0 24/@ft 16/@ft;
+    border-bottom: #e5e5e5 1px solid;
+}
+.sell_mImg{
+    float: left;
+    .wh(198,148);
+    border: #e5e5e5 1px solid;
+    
+    img{
+        .wh(10000%,10000%);
+    }
+}
+.sell_mTitle{
+    float: left;
+    width: 459/@ft;
+    margin-left: 30/@ft;
+    dt{
+        .wh(10000%,86);
+        font-size: 32/@ft;
+        color: #000000;
+        font-weight: bold;
+    }
+    dd{
+        .wh(10000%,50);
+        margin-top: 13/@ft;
+        .s_mTl,i{
+            color: #d5d713;
+        }
+        .s_mTl{
+            float: left;
+            font-size: 32/@ft;
+            line-height: 50/@ft;
+        }
+        i{
+            font-style: normal;
+            font-size: 20/@ft;
+        }
+        .s_mTr{
+            float: right;
+            font-size: 20/@ft;
+            line-height: 32/@ft;
+            color: #c1c1c1;
+            margin-top: 18/@ft;
+        }
+    }
+}
+.side{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    .wh(10000%,10000%);
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+    
+    ul{
+        .wh(7500%,10000%);
+        background: #fff;
+        
+        li{
+            padding-left: 50/@ft;
+            line-height: 70/@ft;
+            border-bottom: #999999 1px solid;
+            font-size: 32/@ft;
+            background: #fff;
+        }
+        ul{
+            width: 100%;
+            height: auto;
+            padding-bottom: 0.2rem;
+            ul{
+                li{
+                    border-bottom: #999 1px dashed;
+                }
+            }
+        }
+        a{
+            display: block;
+            .wh(10000%,10000%);
+            outline: none;
+        }
+    }
+}
+.side_btn{
+    position: fixed;
+    z-index: 9;
+    left: -100%;
+    bottom: 0;
+    width: 75%;
+    background: #fff;
+}
+.side_content strong, .side_content span {
+    float: left;
+    margin-right: 15/@ft;
+}
+.side_content{
+    line-height: 50/@ft;
+    font-size: 30/@ft;
+    padding: 30/@ft;
+    overflow: hidden;
+}
+.side_content span {
+    border: #000 1px solid;
+    padding: 0 5/@ft;
+}
+.side_button{
+    .wh(10000%,80);
+    padding-top: 20/@ft;
+}
+.side_submit,.side_cancel{
+    float: right;
+    .wh(110,60);
+    text-align: center;
+    line-height: 60/@ft;
+    border: 0 none;
+    margin-right: 15/@ft;
+    color: #fff;
+    font-size: 30/@ft;
+}
+.side_submit{
+    background: #d31131;
+}
+.side_cancel{
+    background: #999;
+}
+
+@keyframes sideIn
+{
+    0%{ left: -100%;}
+    100%{ left: 0;}
+}
+
+@-moz-keyframes sideIn /* Firefox */
+{
+    0%{ left: -100%;}
+    100%{ left: 0;}
+}
+
+@-webkit-keyframes sideIn /* Safari 和 Chrome */
+{
+    0%{ left: -100%;}
+    100%{ left: 0;}
+}
+
+@-o-keyframes sideIn /* Opera */
+{
+    0%{ left: -100%;}
+    100%{ left: 0;}
+}
+.sideCur{
+    animation: sideIn 0.5s forwards;
+    -moz-animation: sideIn 0.5s forwards;    /* Firefox */
+    -webkit-animation: sideIn 0.5s forwards; /* Safari 和 Chrome */
+    -o-animation: sideIn 0.5s forwards;  /* Opera */
+}
+
+@keyframes sideOut
+{
+    0%{ left: 0;}
+    100%{ left: -100%;}
+}
+
+@-moz-keyframes sideOut /* Firefox */
+{
+    0%{ left: 0;}
+    100%{ left: -100%;}
+}
+
+@-webkit-keyframes sideOut /* Safari 和 Chrome */
+{
+    0%{ left: 0;}
+    100%{ left: -100%;}
+}
+
+@-o-keyframes sideOut /* Opera */
+{
+    0%{ left: 0;}
+    100%{ left: -100%;}
+}
+.sideIn{
+    animation: sideIn 0.5s forwards;
+    -moz-animation: sideIn 0.5s forwards;    /* Firefox */
+    -webkit-animation: sideIn 0.5s forwards; /* Safari 和 Chrome */
+    -o-animation: sideIn 0.5s forwards;  /* Opera */
+}
+.sideOut{
+    animation: sideOut 0.5s forwards;
+    -moz-animation: sideOut 0.5s forwards;   /* Firefox */
+    -webkit-animation: sideOut 0.5s forwards;    /* Safari 和 Chrome */
+    -o-animation: sideOut 0.5s forwards; /* Opera */
+}
+
+.sell_foot{
+    li:nth-child(1){
+        a{
+            .bg("icon.png",no-repeat,-2/@ft,0,243/@ft,210/@ft);
+        }
+    }
+}
+
+/* 卖车详情 */
+.body01{
+    background: #f1f1f1;
+}
+.carImg{
+    .wh(10000%,300);
+    img{
+        .wh(10000%,10000%);
+    }
+}
+.carInfo,.carConfig,.carComp{
+    margin-top: 15/@ft;
+    background: #fff;
+    border-bottom: #c8c7cc 1px solid;
+}
+
+.carInfo{
+    padding: 19/@ft 0 0 46/@ft;
+    dl{
+        width: 100%;
+        overflow: hidden;
+    }
+    dt{
+        float: left;
+        width: 100%;
+        font-size: 32/@ft;
+        font-weight: bold;
+        line-height: 68/@ft;
+    }
+    dd{
+        float: left;
+        width: 228/@ft;
+        font-family: "宋体";
+        color: #999999;
+        line-height: 50/@ft;
+    }
+    .carInfo_dd{
+        width: 450/@ft;
+    }
+    strong{
+        display: block;
+        font-family: "宋体";
+        font-size: 34/@ft;
+        color: #d5d713;
+        font-weight: bold;
+        line-height: 112/@ft;
+    }
+}
+.carConfig{
+    padding: 30/@ft 0 23/@ft 31/@ft;
+    color: #c7c7cd;
+    overflow: hidden;
+    dt{
+        float: left;
+        width: 85/ft;
+    }
+    dd{
+        float: left;
+        width: 610/@ft;
+    }
+}
+.carComp{
+    padding: 15/@ft 0 28/@ft 36/@ft;
+    margin-bottom: 100/@ft;
+    dt{
+        width: 100%;
+        font-size: 32/@ft;
+        font-weight: bold;
+        line-height: 60/@ft;
+    }
+    dd{
+        width: 100%;
+        color: #c1c1c1;
+        line-height: 46/@ft;
+    }
+}
+.footerTel{
+    border-top: #c8c7cc 1px solid;
+    width: 100%;
+    a{
+        display: block;
+        .wh(193,46);
+        margin: 30/@ft auto 0;
+        font-size: 34/@ft;
+        color: #999999;
+        .bg("icon.png",no-repeat,-136/@ft,-123/@ft,243/@ft,210/@ft);
+        padding-left: 58/@ft;
+    }
+}
+
+/* 卖车管理 */
+.publish{
+    position: relative;
+    top: 0;
+    left: 0;
+    .wh(10000%,119);
+    border-top: #c7c7cd 1px solid;
+    background: #fff;
+}
+#publish{
+    position: absolute;
+    top: 23/@ft;
+    left: 182/@ft;
+    .wh(381,65);
+    background: #fff;
+    color: #dadc3c;
+    line-height: 65/@ft;
+    border: #ecee11 1px solid;
+    border-radius: 2/@ft;
+    text-align: center;
+}
+.sell_mg{
+    margin-top: 23/@ft;
+    li{
+        margin-top: 27/@ft;
+    }
+    .sell_mgList{
+        width: 675/@ft;
+        padding: 0 0 24/@ft 16/@ft;
+    }
+    .sell_mTitle{
+        width: 380/@ft;
+        margin-left: 25/@ft;
+    }
+}
+.mg_check{
+    float: left;
+    .wh(44,44);
+    margin: 43/@ft 8/@ft 0 23/@ft;
+    .bg("icon.png",no-repeat,-134/@ft,-61/@ft,243/@ft,210/@ft);
+    overflow: hidden;
+    
+    .mg_c{
+        opacity: 0;
+        margin-left: -10000/@ft;
+    }
+}
+.mg_checkCur{
+    .bg("icon.png",no-repeat,-134/@ft,-5/@ft,243/@ft,210/@ft);
+}
+.sell_mgList{
+    float: left;
+    
+}
+.mg_btn{
+    display: block;
+    .wh(10000%,99);
+    border: 0 none;
+    border-top: #c7c7cd 1px solid;
+    background: #d31131;
+    color: #fff;
+    font-size: 34/@ft;
+    font-weight: bold;
+    line-height: 99/@ft;
+    text-align: center;
+}
+
+/* 卖车发布 */
+.top{
+    width: 100%;
+    border-top: #b2b2b2 1px solid;
+}
+.publish_box{
+    padding-left: 30/@ft;
+    margin-top: 50/@ft;
+    border-top: #c8c7cc 1px solid;
+    border-bottom: #c8c7cc 1px solid;
+    background: #fff;
+}
+.publish_ul{
+    li{
+        border-bottom: #c8c7cc 1px solid;
+        height: 88/@ft;
+        line-height: 88/@ft;
+        font-size: 26/@ft;
+    }
+    label{
+        float: left;
+    }
+    input{
+        float: right;
+        .wh(520,88);
+        line-height: 88/@ft;
+        border: 0 none;
+        background: none;
+    }
+    li:last-child{
+        border-bottom: 0 none;
+    }
+    .arrow{
+        box-sizing: border-box;
+        padding-right: 72/@ft;
+        text-align: right;
+        .bg("arrow.png",no-repeat,right,top,auto,100%);
+    }
+    .arrow_w{
+        background-image: url(../images/wan.png);
+    }
+}
+.buySell_text{
+    display: block;
+    .wh(10000%,367);
+    box-sizing: border-box;
+    font-size: 26/@ft;
+    line-height: 36/@ft;
+    padding: 35/@ft 20/@ft 20/@ft;
+    border: 0 none;
+    border-bottom: #c8c7cc 1px solid;
+    overflow-y: auto;
+}
+.publish_text{
+    height: 170/@ft;
+}
+.publish_file{
+    position: relative;
+    input{
+        position: absolute;
+        .wh(10000%,10000%);
+        z-index: 999;
+        opacity: 0;
+    }
+}
+.publish_img{
+    position: absolute;
+    top: 13/@ft;
+    left: 13/@ft;
+    z-index: 1;
+    .wh(58,58);
+    background: #373737;
+    border-radius: 12/@ft;
+    i{
+        position: absolute;
+        right: 12/@ft;
+        top: 14/@ft;
+        .wh(15,15);
+        background: #f1f330;
+        border-radius: 50%;
+    }
+    em{
+        position: absolute;
+        left: 90/@ft;
+        top: 0;
+        font-style: normal;
+        font-size: 26/@ft;
+        line-height: 58/@ft;
+        white-space: nowrap;
+    }
+}
+.publish_arrow{
+    float: right;
+    height: 100%;
+}
+.buySell_btn{
+    display: block;
+    margin: 100/@ft auto 50/@ft;
+    border: 0 none;
+    width: 678/@ft;
+    height: 100/@ft;
+    line-height: 100/@ft;
+    text-align: center;
+    color: #333;
+    font-size: 34/@ft;
+    background: #f1f330;
+    border-radius: 8/@ft;
+}
+.buy_mTitle{
+    dt{
+        height: 43/@ft;
+    }
+    dt,.deploy{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .deploy{
+        font-size: 20/@ft;
+        color: #b8b8b8;
+    }
+}
+
+/* 买车详情 */
+.buy_person {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 32/@ft 0 33/@ft 47/@ft;
+    border-top: #a8a8a8 1px solid;
+    dt{
+        float: left;
+        .wh(85,85);
+        margin-right: 17/@ft;
+        img{
+            .wh(10000%,10000%);
+            border-radius: 50%;
+        }
+    }
+    dd{
+        float: left;
+        width: 600/@ft;
+        font-family: "宋体";
+        font-size: 34/@ft;
+        line-height: 48/@ft;
+        font-weight: bold;
+    }
+    dd:last-child {
+        font-size: 26/@ft;
+        color: #e5e5e5;
+        font-weight: 400;
+    }
+}
+
+/* 委托买卖 */
+.buySell{
+    margin-top: 19/@ft;
+    margin-bottom: 150/@ft;
+    li{
+        width: 100%;
+        border-bottom: #e5e5e5 1px solid;
+        padding-top: 43/@ft;
+        overflow: hidden;
+        background: #fff;
+        a{
+            display: block;
+            .wh(10000%,10000%);
+        }
+    }
+}
+.buySell_num{
+    float: left;
+    .wh(111,96);
+    line-height: 96/@ft;
+    text-align: center;
+    border-right: #c7c7cd 1px solid;
+    color: #999;
+    font-size: 34/@ft;
+}
+.buySell_car{
+    float: left;
+    width: 530/@ft;
+    margin-left: 62/@ft;
+    padding-bottom: 20/@ft;
+    dt{
+        height: 44/@ft;
+        line-height: 44/@ft;
+        font-size: 32/@ft;
+        font-weight: bold;
+        overflow: hidden;
+    }
+    dd{
+        height: 46/@ft;
+        line-height: 46/@ft;
+        font-size: 20/@ft;
+        color: #b8b8b8;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    dd:last-child{
+        text-align: right;
+    }
+}
+
+/* 委托发布 */
+.buySell_text{
+    display: block;
+    .wh(10000%,367);
+    line-height: 36/@ft;
+    box-sizing: border-box;
+    font-size: 26/@ft;
+    padding: 35/@ft 20/@ft 20/@ft;
+    border: 0 none;
+    border-bottom: #c8c7cc 1px solid;
+    overflow-y: auto;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<title>买车发布</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/js.js"></script>
+		<script src="js/jquery.1.10.0.min.js"></script>
+		<script src="js/fontAuto.js"></script>
+	</head>
+	<body>
+		<form>
+			<div class="top"></div>
+			<div class="publish_box">
+				<ul class="publish_ul">
+					<li>
+						<label for="title">标题</label>
+						<input class="jsNav" id="title" type="text" value placeholder="品牌 车系 车型" readonly/>
+					</li>
+					<li>
+						<label for="year">年份</label>
+						<input class="jsNav" id="year" type="text" value placeholder="年份" readonly/>
+					</li>
+					<li>
+						<label for="outColor">外色</label>
+						<input class="jsNav" id="outColor" type="text" value placeholder="白色" readonly/>
+					</li>
+					<li>
+						<label for="inColor">内色</label>
+						<input class="jsNav" id="inColor" type="text" value placeholder="黑色" readonly/>
+					</li>
+				</ul>
+			</div>
+			<div class="publish_box">
+				<ul class="publish_ul">
+					<li>
+						<label for="where">卖到哪里</label>
+						<input class="jsNav arrow" id="where" type="text" value placeholder="地址" readonly/>
+					</li>
+					<li>
+						<label for="status">状态</label>
+						<input class="jsNav arrow" id="status" type="text" value placeholder="状态" readonly/>
+					</li>
+				</ul>
+			</div>
+			<div class="side">
+				<!-- 品牌 车系 车型 -->
+				<ul id="titleUl" style="display: none;">
+					<li>
+						<a href="javascript:void(0)">奔驰</a>
+						<ul style="display: none;">
+							<li>
+								<a href="javascript:void(0)">C系</a>
+								<ul style="display: none;">
+									<li>
+										<a href="javascript:void(0)">c63</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">c180</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">c200</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0)">E系</a>
+								<ul style="display: none;">
+									<li>
+										<a href="javascript:void(0)">E63</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">E180</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">E200</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0)">宝马</a>
+						<ul style="display: none;">
+							<li>
+								<a href="javascript:void(0)">C系</a>
+								<ul style="display: none;">
+									<li>
+										<a href="javascript:void(0)">c63</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">c180</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">c200</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0)">E系</a>
+								<ul style="display: none;">
+									<li>
+										<a href="javascript:void(0)">E63</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">E180</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">E200</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- 年份 -->
+				<ul id="yearUl" style="display: none;">
+					<li>
+						<a href="javascript:void(0)">2015</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">2014</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">2013</a>
+					</li>
+				</ul>
+				<!-- 外色 -->
+				<ul id="outColorUl" style="display: none;">
+					<li>
+						<a href="javascript:void(0)">白色</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">黑色</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">红色</a>
+					</li>
+				</ul>
+				<!-- 内色 -->
+				<ul id="inColorUl" style="display: none;">
+					<li>
+						<a href="javascript:void(0)">白色</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">黑色</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">红色</a>
+					</li>
+				</ul>
+				<!-- 类型 -->
+				<ul id="sortUl" style="display: none;">
+					<li>
+						<a href="javascript:void(0)">欧版现货</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">港版现货</a>
+					</li>
+				</ul>
+				<!-- 卖到哪里 -->
+				<ul id="whereUl" style="display: none;">
+					<li>
+						<a href="javascript:void(0)">北京</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">上海</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">杭州</a>
+					</li>
+				</ul>
+				<!-- 状态 -->
+				<ul id="statusUl" style="display: none;">
+					<li>
+						<a href="javascript:void(0)">全款</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">定金</a>
+					</li>
+				</ul>
+			</div>
+			<textarea class="buySell_text publish_text" placeholder="配置 需要手动填写"></textarea>
+			
+			<input class="buySell_btn" type="submit" value="发布">
+		</form>
+		
+		<script>
+			var inputs = document.querySelectorAll(".jsNav");
+			var sideObj = document.querySelector(".side");
+			for(var i=0;i<inputs.length;i++){
+				inputs[i].onclick = function(){
+					var thisID = this.id;
+//					console.log(thisID);
+					
+					sideObj.className = "side sideIn";
+					document.querySelector("#" + thisID + "Ul").style.display = "";
+				}
+			}
+			sideObj.onclick = function(e){
+				var event = e || window.event;
+				var target = event.target || event.srcElement;
+				if(target.nodeName.toLowerCase() == "div"){
+					sideObj.className = "side sideOut";
+					var sideUls = sideObj.querySelectorAll("ul");
+					for(var i=0;i<sideUls.length;i++){
+						sideUls[i].style.display = "none";
+					}
+				}
+				else if(target.nodeName.toLowerCase() == "a"){
+					var secondUl = target.parentNode.getElementsByTagName("ul")[0];
+					var val = target.innerHTML;
+					var ulIdObj = parentObj(target);
+					var ulId = ulIdObj.id.substring(0,ulIdObj.id.length-2);
+					document.querySelector("#" + ulId).value = val;
+					if(secondUl){
+						if(secondUl.style.display.indexOf("none") != -1){
+							secondUl.style.display = "";
+						}
+						else{
+							secondUl.style.display = "none";
+						}
+					}
+					else{
+						sideObj.className = "side sideOut";
+						var uls = sideObj.getElementsByTagName("ul");
+						for(var k=0;k<uls.length;k++){
+							uls[k].style.display = "none";
+						}
+					}
+					
+					if(target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.id){
+						var as = target.parentNode.parentNode.parentNode.parentNode.parentNode.getElementsByTagName("a");
+						var valA = as[0].innerHTML;
+						var valB = as[1].innerHTML;
+						document.querySelector("#" + ulId).value = valA + " " + valB + " " + val;
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
