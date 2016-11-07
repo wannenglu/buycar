@@ -578,9 +578,9 @@ body {
 }
 .mg_check {
   float: left;
-  width: 0.45rem;
-  height: 0.45rem;
-  margin: 0.43rem 0.08rem 0 0.23rem;
+  width: 0.46rem;
+  height: 0.46rem;
+  margin: 0.43rem 0.08rem 0 0.21rem;
   background: url("../images/icon.png") no-repeat -1.34rem -0.61rem;
   background-size: 2.43rem 2.1rem;
   overflow: hidden;
